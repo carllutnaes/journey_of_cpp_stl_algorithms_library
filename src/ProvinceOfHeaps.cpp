@@ -9,7 +9,6 @@
 //{
 void ProvinceOfHeaps(std::vector<int> &int_vec)
 {
-    //std::cout << "Bla: " << TestFunc::testFunc(2) << std::endl;
     std::cout << "\n1.1 Province Of Heaps" << std::endl;
 
     //Algorithm 1 : make_heap
