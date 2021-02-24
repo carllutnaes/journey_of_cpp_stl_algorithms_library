@@ -10,7 +10,7 @@ Jonathan Boccara's CppCon 2018 talk *"105 STL Algorithms in Less Than an Hour"* 
 ## Journey
 A comprehensive journey through the C++ STL algorithms library. The purpose of this repository is to demonstrate use of each STL algorithm atleast once (as of C++17).
 
-Current state of the journey is **4 of 105** algorithms, and I am in the Lands of Permutations.
+Current state of the journey is **8 of 105** algorithms, and I am in the Lands of Permutations.
 
  <!--2. Lands of Queries
  3. Islands of Structure Changes

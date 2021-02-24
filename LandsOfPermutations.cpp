@@ -1,5 +1,6 @@
 #include <vector>
 #include <iostream>
+#include <algorithm>
 
 #include "include/VectorPrint.hpp"
 #include "include/ProvinceOfHeaps.hpp"
@@ -12,8 +13,10 @@ int main() {
     std::cout << "Starting vector:\n"
               << int_vec << std::endl;
 
-    std::cout << "1. Lands of Permutations" << std::endl;
+    std::cout << "\n1. Lands of Permutations" << std::endl;
     ProvinceOfHeaps(int_vec);
+
+    std::make_heap(int_vec.begin(), int_vec.end());
     ShoreOfSorting(int_vec);
 
     return 1;
