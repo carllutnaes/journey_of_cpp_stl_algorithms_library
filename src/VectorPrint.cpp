@@ -1,4 +1,5 @@
 #include <ostream>
+#include <iostream>
 #include <algorithm>
 #include <vector>
 
@@ -23,4 +24,22 @@ std::ostream &operator<<(std::ostream &s, std::vector<int> &vec)
     }
     s << "}";
     return s;
+}
+
+void printPartitionedVector(std::vector<int> &vec, std::vector<int>::iterator &crit)
+{
+    std::cout << "{";
+
+    for (std::vector<int>::iterator it = vec.begin(); it != crit; ++it)
+    {
+        std::cout << *it;
+        std::cout << (it != (crit - 1) ? ", " : "");
+    }
+    std::cout << "} {";
+    for (std::vector<int>::iterator it = crit; it != vec.end(); ++it)
+    {
+        std::cout << *it;
+        std::cout << (it != vec.end() - 1 ? ", " : "");
+    }
+    std::cout << "}" << std::endl;
 }

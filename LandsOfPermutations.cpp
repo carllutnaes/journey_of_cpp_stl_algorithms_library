@@ -5,6 +5,7 @@
 #include "include/VectorPrint.hpp"
 #include "include/ProvinceOfHeaps.hpp"
 #include "include/ShoreOfSorting.hpp"
+#include "include/RegionOfPartitioning.hpp"
 
 
 int main() {
@@ -14,10 +15,10 @@ int main() {
               << int_vec << std::endl;
 
     std::cout << "\n1. Lands of Permutations" << std::endl;
-    ProvinceOfHeaps(int_vec);
+    //ProvinceOfHeaps(int_vec);
 
     std::make_heap(int_vec.begin(), int_vec.end());
-    ShoreOfSorting(int_vec);
-
+    //ShoreOfSorting(int_vec);
+    RegionOfPartitioning();
     return 1;
 }
