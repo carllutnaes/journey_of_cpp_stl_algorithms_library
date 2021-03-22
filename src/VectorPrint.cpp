@@ -2,6 +2,7 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <string>
 
 #include "../include/VectorPrint.hpp"
 
@@ -26,20 +27,21 @@ std::ostream &operator<<(std::ostream &s, std::vector<int> &vec)
     return s;
 }
 
-void printPartitionedVector(std::vector<int> &vec, std::vector<int>::iterator &crit)
+std::string partitionedVectorToString(std::vector<int> &vec, std::vector<int>::iterator crit)
 {
-    std::cout << "{";
+    std::string s;   
+    s+= vectorToString(vec.begin(),crit);
+    s+= vectorToString(crit,vec.end());
+    return s;
+}
 
-    for (std::vector<int>::iterator it = vec.begin(); it != crit; ++it)
+std::string vectorToString(const std::vector<int>::iterator it1, const std::vector<int>::iterator it2) {
+    std::string s;
+    s+="{";
+    for (std::vector<int>::iterator it = it1; it != it2; ++it)
     {
-        std::cout << *it;
-        std::cout << (it != (crit - 1) ? ", " : "");
+        s += std::to_string(*it);
+        s += (it != it2 - 1) ? ", " : "";
     }
-    std::cout << "} {";
-    for (std::vector<int>::iterator it = crit; it != vec.end(); ++it)
-    {
-        std::cout << *it;
-        std::cout << (it != vec.end() - 1 ? ", " : "");
-    }
-    std::cout << "}" << std::endl;
+    return s+="}";
 }

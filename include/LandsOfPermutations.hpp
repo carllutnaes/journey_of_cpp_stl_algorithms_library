@@ -1,0 +1,6 @@
+#ifndef LANDSOFPERMUTATIONS_H
+#define LANDSOFPERMUTATIONS_H
+
+void LandsOfPermutations();
+
+#endif //LANDSOFPERMUTATIONS_H
