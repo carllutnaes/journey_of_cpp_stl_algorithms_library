@@ -8,9 +8,12 @@ Jonathan Boccara's CppCon 2018 talk *"105 STL Algorithms in Less Than an Hour"* 
  **Website with Map:** [https://www.fluentcpp.com/getthemap/](https://www.fluentcpp.com/getthemap/)
 
 ## Journey
-A comprehensive journey through the C++ STL algorithms library. The purpose of this repository is to demonstrate use of each STL algorithm atleast once (as of C++17).
+A comprehensive journey through the C++ STL algorithms library. The purpose of this repository is to demonstrate use of each STL algorithm once (as of C++17).
 
-Current state of the journey is **10 of 105** algorithms, and I am in the Lands of Permutations.
+Current state of the journey is **11 of 105** algorithms, and I am in the Lands of Permutations.
+
+Current printout in console:
+![Console output](img/console.png)
 
  <!--2. Lands of Queries
  3. Islands of Structure Changes
